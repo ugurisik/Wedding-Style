@@ -9,7 +9,7 @@ $dbname = "bride_bride";
 
 $user = "bride_bride";
 
-$password = "eJRrU7ccLe";
+$password = "eJRrU7ccLe--a";
 try {
     $db = new PDO("mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8", $user, $password);
 } catch (PDOException $e) {
