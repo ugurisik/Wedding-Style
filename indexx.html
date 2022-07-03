@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Brideroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="BRİDEROOM" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="bakımsayfa/css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="bakımsayfa/css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="bakımsayfa/css/bootstrap.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="bakımsayfa/css/style.css" />
+
+    <!-- Modernizr JS -->
+    <script src="bakımsayfa/js/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+      <div id="fh5co-container" class="js-fullheight">
+        <div class="countdown-wrap js-fullheight">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="display-t js-fullheight">
+                <div class="display-tc animate-box">
+                  <nav class="fh5co-nav" role="navigation">
+                    <div id="fh5co-logo">
+                      <a href="index.html"
+                        ><img src="bakımsayfa/images/logo-white.png" alt=""
+                      /></a>
+                    </div>
+                  </nav>
+                  <h1>Çok yakında sizlerle...</h1>
+                  <h2>
+                    <a href="index.html" target="_blank">Brideroom </a>harika
+                    bir websitesi haline geliyor.
+                  </h2>
+                  <div class="simply-countdown simply-countdown-one"></div>
+                  <div class="row"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-cover js-fullheight"
+          style="background-image: url(bakımsayfa/images/bg.jpg)"
+        ></div>
+      </div>
+    </div>
+
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="bakımsayfa/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="bakımsayfa/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="bakımsayfa/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="bakımsayfa/js/jquery.waypoints.min.js"></script>
+
+    <!-- Count Down -->
+    <script src="bakımsayfa/js/simplyCountdown.js"></script>
+    <!-- Main -->
+    <script src="bakımsayfa/js/main.js"></script>
+
+    <script>
+      var d = new Date(new Date().getTime() + 8 * 120 * 120 * 2000);
+
+      simplyCountdown(".simply-countdown-one", {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+      });
+
+      $("#simply-countdown-losange").simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: true,
+      });
+    </script>
+  </body>
+</html>
